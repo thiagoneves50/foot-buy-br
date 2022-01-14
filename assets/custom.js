@@ -33,3 +33,17 @@
  *   bubbles: true
  * }));
  */
+
+// Select the div with name and number fields
+const personalizarFields = document.querySelector("#personalizar-container");
+
+// Listener to the variant change
+document.addEventListener("variant:changed", function (event) {
+	var variant = event.detail.variant; // Gives you access to the whole variant details
+
+	if (variant.option2 == "Sem Personalização") {
+		personalizarFields.classList.add("custom__class-hidden");
+	} else {
+		personalizarFields.classList.remove("custom__class-hidden");
+	}
+});

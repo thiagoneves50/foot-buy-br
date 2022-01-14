@@ -7331,7 +7331,8 @@ select::-ms-expand {
   }
 
   .line-item--stack .line-item__price {
-    background-color: black;
+    /* Esta linha abaixo estava deixando o preço difícil de ler no celular */
+    /* background-color: black;  */ 
     font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 13px));
   }
 
@@ -13159,3 +13160,49 @@ select::-ms-expand {
     min-width: 0;
   }
 }
+
+/**
+ * --------------------------------------------------------------------
+ * CUSTOM CSS
+ *
+ * Not part of the theme
+ * --------------------------------------------------------------------
+ */
+
+ /* Personalizar feature */
+
+ #personalizar-name, #personalizar-number {
+  display: inline-block;
+ }
+
+ #personalizar-name {
+  max-width: 220px;
+ }
+
+#personalizar-number {
+  max-width: 120px;
+  min-width: 105px;
+ }
+
+.form__input-personalizar-inline {
+  display: inline-block;
+  width: auto;
+}
+
+#checkbox-personalizar {
+  width: 100%;
+}
+
+.custom__class-hidden {
+  display: none !important;
+}
+
+.custom__class-personalizar-instruction {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#personalizar-container {
+  padding-left: 3px;
+}
+
